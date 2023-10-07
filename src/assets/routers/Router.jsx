@@ -6,6 +6,8 @@ import Services from "../serviecs/Services";
 import BestWorks from "../best work/BestWorks";
 import Review from "../reviews/Review";
 import ServicesDtails from "../serviecs/ServicesDtails";
+import Login from "../login/Login";
+import Register from "../login/Register";
 
 
 
@@ -41,7 +43,17 @@ const router = createBrowserRouter([
                 element : <ServicesDtails></ServicesDtails>,
                 loader : ()=> fetch('/public/data.json')
                 
-            }
+            },
+            {
+                path : "/login",
+                element : <Login></Login>,
+               
+            } ,
+            {
+                path : "/register",
+                element : <Register></Register>,
+               
+            } 
         ]
     }
 ]);

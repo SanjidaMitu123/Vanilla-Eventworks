@@ -1,7 +1,7 @@
 
 import { useLoaderData } from "react-router-dom";
 import ServicesCard from "./ServicesCard";
-import Footer from "../footer/Footer";
+
 
 
 
@@ -27,7 +27,7 @@ const Services = ( {services} ) => {
                 
             </div>
  
-            <Footer></Footer>
+         
 
         </div>
         
