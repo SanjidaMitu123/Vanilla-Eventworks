@@ -23,7 +23,7 @@ const Navbar = () => {
                    </li>
                    <li>
                    <NavLink
-                     to="/donation"
+                     to="/services"
                      className={({ isActive, isPending }) =>
                      isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                       }
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </li>
                 <li>
                    <NavLink
-                     to="/statistics"
+                     to="/works"
                      className={({ isActive, isPending }) =>
                      isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                       }
@@ -44,17 +44,17 @@ const Navbar = () => {
              
                 <li>
                    <NavLink
-                     to="/statistics"
+                     to="/reviews"
                      className={({ isActive, isPending }) =>
                      isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                       }
                      >
-                      Blogs
+                      Reviews
                    </NavLink>
                 </li>
                 <li>
                    <NavLink
-                     to="/statistics"
+                     to="/contacts"
                      className={({ isActive, isPending }) =>
                      isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                       }
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </li>
                 <li>
                    <NavLink
-                     to="/statistics"
+                     to="/myacc"
                      className={({ isActive, isPending }) =>
                      isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
                       }

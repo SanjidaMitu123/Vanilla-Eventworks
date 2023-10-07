@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer";
 
 
 const BestWorks = () => {
@@ -14,7 +15,7 @@ const BestWorks = () => {
 
 
             </div>
-            
+            <Footer></Footer>
         </div>
     );
 };

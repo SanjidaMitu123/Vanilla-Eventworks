@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer";
 
 
 const Review = () => {
@@ -42,7 +43,7 @@ const Review = () => {
 
 
             </div>
-            
+            <Footer></Footer>
         </div>
     );
 };
