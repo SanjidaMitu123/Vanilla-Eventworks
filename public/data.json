@@ -1,0 +1,61 @@
+[
+    
+      {
+        "id": 1,
+        "name": "Music Festivals",
+        "image": "/public/event1.PNG",
+        "price": 5000,
+        "short_description": "Expert Music Festivals planning services to make your big day unforgettable."
+      },
+      {
+        "id": 2,
+        "name": " Film Screenings",
+        "image": "/public/event2.PNG",
+        "price": 3000,
+        "short_description": "Professional event management for  Film Screenings and gatherings."
+      },
+      {
+        "id": 3,
+        "name": "Theater and Performing Arts",
+        "image": "/public/event3.PNG",
+        "price": 1000,
+        "short_description": "Fun and creative Theater and Performing Arts planning services."
+      },
+      {
+        "id": 4,
+        "name": "Concert Production",
+        "image": "/public/event4.PNG",
+        "price": 8000,
+        "short_description": "Complete concert production solutions, from setup to logistics."
+      },
+      {
+        "id": 5,
+        "name": "Film Premieres",
+        "image": "/public/event5.PNG",
+        "price": 4000,
+        "short_description": "Efficient coordination for Film Premieres."
+      },
+      {
+        "id": 6,
+        "name": "Private Party Planning",
+        "image": "/public/event6.PNG",
+        "price": 1500,
+        "short_description": "Personalized planning for private parties and gatherings."
+      },
+      {
+        "id": 7,
+        "name": "Comedy Shows",
+        "image": "/public/event7.PNG",
+        "price": 3500,
+        "short_description": "Comedy Shows management services for successful events."
+      },
+      {
+        "id": 8,
+        "name": "Theme Event Design",
+        "image": "/public/event8.PNG",
+        "price": 2000,
+        "short_description": "Creative theme event design and execution."
+      }
+    
+    ]
+  
