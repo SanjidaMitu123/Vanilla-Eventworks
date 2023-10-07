@@ -5,9 +5,9 @@ import Logo from "./Logo";
 const Navbar = () => {
     return (
         <div>
-        <nav className="lg:flex justify-between items-center relative ">
+        <nav className="lg:flex ml-[240px] text-center items-center relative ">
             <Logo></Logo>
-            <ul className=" flex gap-6 mr-6  ">
+            <ul className=" flex ml-12 text-right gap-6 mr-6 font-extrabold text-2xl text-cyan-500 ">
                 <li>
                   
                   
@@ -41,16 +41,7 @@ const Navbar = () => {
                       Works
                    </NavLink>
                 </li>
-                <li>
-                   <NavLink
-                     to="/statistics"
-                     className={({ isActive, isPending }) =>
-                     isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
-                      }
-                     >
-                     Locations
-                   </NavLink>
-                </li>
+             
                 <li>
                    <NavLink
                      to="/statistics"
@@ -69,6 +60,16 @@ const Navbar = () => {
                       }
                      >
                       Contact
+                   </NavLink>
+                </li>
+                <li>
+                   <NavLink
+                     to="/statistics"
+                     className={({ isActive, isPending }) =>
+                     isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
+                      }
+                     >
+                      My Account
                    </NavLink>
                 </li>
             </ul>
