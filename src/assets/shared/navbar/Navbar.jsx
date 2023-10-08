@@ -75,9 +75,14 @@ const Navbar = () => {
                 </li>
 
                 {
-                  user ?  
+                  user ?
+                   <div>
+                   
+                  <button onClick={singOUT} className=" btn btn-secondary">Sing out</button>
+                  <span className="text-black"> {user.email} </span>
+                  </div>
                
-                  <button onClick={singOUT} className="btn">sing out</button>
+
                   
                   :<li>
                   <NavLink
