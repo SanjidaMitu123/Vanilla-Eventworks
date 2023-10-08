@@ -8,10 +8,16 @@ import swal from "sweetalert";
 
 const Login = () => {
 
-  const {signIn} = useContext(AuthContext);
+  const {signIn, googleSingIn} = useContext(AuthContext);
 
   const location = useLocation();
   const navigate = useNavigate();
+
+  const googlelogin = () =>{
+    googleSingIn().then(result =>{
+      console.log(result.user)
+    })
+  }
   
   console.log(location)
   
@@ -61,7 +67,7 @@ const Login = () => {
         </div>
       </form>
 
-      <button className="lg:ml-[520px] mt-4 w-[300px] btn btn-secondary">Login with Google</button>
+      <button onClick={googlelogin} className="lg:ml-[520px] mt-4 w-[300px] btn btn-secondary">Login with Google</button>
 
       <p className="text-center mt-5 mb-5">For new Account <Link to='/register' className="font-bold text-cyan-500 mt-5"> Resgister</Link> Now</p>
             

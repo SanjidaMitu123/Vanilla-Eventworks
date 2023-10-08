@@ -18,7 +18,7 @@ const Navbar = () => {
         <div>
         <nav className="lg:flex sm:grid sm:grid-cols-3 lg:ml-[240px] text-center items-center relative ">
             <Logo></Logo>
-            <ul className=" flex ml-12 text-right gap-6 mr-6 font-extrabold text-2xl text-cyan-500 ">
+            <ul className=" lg:flex  sm:grid sm:grid-cols-3 lg:ml-12 text-right sm:gap-2 lg:gap-6 mr-6 lg:font-extrabold sm:font-bold lg:text-2xl text-cyan-500 ">
                 <li>
                   
                   
