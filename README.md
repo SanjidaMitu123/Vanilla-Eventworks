@@ -1,8 +1,15 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vanilla Event works
 
-Currently, two official plugins are available:
+Live link :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+features and functionalities:
+1.Home page had a navbar with active routes.
+2.In navbar blogs & contact are two priverts routes are secure with login
+3.User can Register
+4.user can login with register info 
+5.user can login with google
+6.home contain Carousel banner, servies card , Our Best Works, Reviews and footer.
+7.serviecs detais are in private routes secure with login
+8.Aos animation are noticeable
+ 
