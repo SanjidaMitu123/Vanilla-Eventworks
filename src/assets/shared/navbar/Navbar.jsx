@@ -16,7 +16,7 @@ const Navbar = () => {
    }
     return (
         <div>
-        <nav className="lg:flex ml-[240px] text-center items-center relative ">
+        <nav className="lg:flex sm:grid sm:grid-cols-3 lg:ml-[240px] text-center items-center relative ">
             <Logo></Logo>
             <ul className=" flex ml-12 text-right gap-6 mr-6 font-extrabold text-2xl text-cyan-500 ">
                 <li>

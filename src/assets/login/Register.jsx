@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../firebase/AuthProvider";
+import swal from "sweetalert";
 
 
 
@@ -24,9 +25,11 @@ const Register = () => {
          createUser(email,password)
          .then(result =>{
           console.log(result.user)
+          swal ("Registration Done.Please Login")
          })
          .catch(error =>{
           console.error(error)
+          swal ("user name or password incorrect")
          })
 
     }

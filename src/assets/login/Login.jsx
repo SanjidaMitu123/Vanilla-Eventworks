@@ -1,13 +1,19 @@
 
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../firebase/AuthProvider";
+import swal from "sweetalert";
 
 
 
 const Login = () => {
 
   const {signIn} = useContext(AuthContext);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+  
+  console.log(location)
   
     const Login = e => {
         e.preventDefault();
@@ -20,9 +26,13 @@ const Login = () => {
          signIn(email, password)
          .then(result =>{
           console.log(result)
+          swal ('login successfully');
+          navigate(location?.state ? location.state : '/');
+          
          })
          .catch (error => {
           console.error(error)
+          swal ("user name or password incorrect")
          })
          
     }
@@ -51,7 +61,9 @@ const Login = () => {
         </div>
       </form>
 
-      <p className="text-center mt-5">For new Account <Link to='/register' className="font-bold text-cyan-500 mt-5"> Resgister</Link> Now</p>
+      <button className="lg:ml-[520px] mt-4 w-[300px] btn btn-secondary">Login with Google</button>
+
+      <p className="text-center mt-5 mb-5">For new Account <Link to='/register' className="font-bold text-cyan-500 mt-5"> Resgister</Link> Now</p>
             
         
         </div>

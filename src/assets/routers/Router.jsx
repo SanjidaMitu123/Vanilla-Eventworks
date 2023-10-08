@@ -9,6 +9,7 @@ import ServicesDtails from "../serviecs/ServicesDtails";
 import Login from "../login/Login";
 import Register from "../login/Register";
 import ContractUs from "../pages/contactpage/ContractUs";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -41,12 +42,12 @@ const router = createBrowserRouter([
             },
             {
                 path : "/contacts",
-                element :<ContractUs></ContractUs>
+                element :<PrivateRoute><ContractUs></ContractUs></PrivateRoute>
                
             },
             {
                 path : "/services/:id",
-                element : <ServicesDtails></ServicesDtails>,
+                element : <PrivateRoute><ServicesDtails></ServicesDtails></PrivateRoute> ,
                 loader : ()=> fetch('/public/data.json')
                 
             },
