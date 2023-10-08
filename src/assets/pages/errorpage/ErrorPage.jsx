@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ErrorPage = () => {
     return (
         <div className="h-screen flex justify-center items-center">
-           error 
+           
            <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div className="text-center">
           <p className="text-base font-semibold text-indigo-600">404</p>

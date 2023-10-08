@@ -16,16 +16,16 @@ const Blogs = () => {
         <div  className="grid lg:grid-cols-4 sm:grid-cols-1 gap-7 mb-7 ml-7 ">
            
         
-          <img data-aos="fade-down-right" src="/public/event1.PNG" alt="" />
-          <img data-aos="fade-down-left" src="/public/event3.PNG" alt="" />
-          <img data-aos="fade-down-right" src="/public/event4.PNG" alt="" />
-          <img data-aos="fade-down-left" src="/public/event5.PNG" alt="" />
+          <img data-aos="fade-down-right" src="./event1.PNG" alt="" />
+          <img data-aos="fade-down-left" src="./event3.PNG" alt="" />
+          <img data-aos="fade-down-right" src="./event4.PNG" alt="" />
+          <img data-aos="fade-down-left" src="./event5.PNG" alt="" />
          
 
-          <img data-aos="fade-down-left" src="/public/eventwork3.PNG" alt="" />
-          <img data-aos="fade-down-right" src="/public/eventwork4.PNG" alt="" />
-          <img data-aos="fade-down-right" src="/public/event4.PNG" alt="" />
-          <img data-aos="fade-down-left" src="/public/event5.PNG" alt="" />
+          <img data-aos="fade-down-left" src="./eventwork3.PNG" alt="" />
+          <img data-aos="fade-down-right" src="./eventwork4.PNG" alt="" />
+          <img data-aos="fade-down-right" src="./event4.PNG" alt="" />
+          <img data-aos="fade-down-left" src="./event5.PNG" alt="" />
 
 
 

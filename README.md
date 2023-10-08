@@ -1,7 +1,7 @@
 
 Vanilla Event works
 
-Live link :
+Live link : https://vanilla-eventworks.web.app/
 
 features and functionalities:
 1.Home page had a navbar with active routes.

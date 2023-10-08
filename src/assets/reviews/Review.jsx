@@ -25,7 +25,7 @@ const Review = () => {
 <div data-aos="flip-right" className="card w-96 bg-base-100 shadow-xl lg:mr-[200px] lg:ml-[-70px]">
   <div className="card-body">
     <h2 className="card-title">Review</h2>
-    <figure><img src="/public/review2.PNG" alt="Shoes" /></figure>
+    <figure><img src="./review2.PNG" alt="Shoes" /></figure>
   </div>
  
 </div>
@@ -33,7 +33,7 @@ const Review = () => {
 <div data-aos="flip-left" className="card lg:w-96 sm:w-[30px] bg-base-100 shadow-xl lg:ml-[70px]">
   <div className="card-body">
     <h2 className="card-title">Review</h2>
-    <figure><img src="/public/review3.PNG" alt="Shoes" /></figure>
+    <figure><img src="./review3.PNG" alt="Shoes" /></figure>
   </div>
   
 </div>
@@ -41,7 +41,7 @@ const Review = () => {
 <div data-aos="flip-right" className="card w-96 bg-base-100 lg:mr-[200px] lg:ml-[-70px] shadow-xl">
   <div className="card-body">
     <h2 className="card-title">Review</h2>
-    <figure><img src="/public/review4.PNG" alt="Shoes" /></figure>
+    <figure><img src="./review4.PNG" alt="Shoes" /></figure>
   </div>
 
 </div>

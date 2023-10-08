@@ -17,8 +17,8 @@ const BestWorks = () => {
             <div  className="lg:flex gap-7 ml-7 ">
 
          
-              <img data-aos="fade-down-left" src="/public/eventwork3.PNG" alt="" />
-              <img data-aos="fade-down-right" src="/public/eventwork4.PNG" alt="" />
+              <img data-aos="fade-down-left" src="./eventwork3.PNG" alt="" />
+              <img data-aos="fade-down-right" src="./eventwork4.PNG" alt="" />
 
 
 
