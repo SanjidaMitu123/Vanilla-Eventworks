@@ -10,6 +10,7 @@ import Login from "../login/Login";
 import Register from "../login/Register";
 import ContractUs from "../pages/contactpage/ContractUs";
 import PrivateRoute from "./PrivateRoute";
+import Blogs from "../pages/blogs/Blogs";
 
 
 
@@ -38,6 +39,12 @@ const router = createBrowserRouter([
             {
                 path : "/reviews",
                 element : <Review></Review>
+               
+            },
+            
+            {
+                path : "/blogs",
+                element :<PrivateRoute> <Blogs></Blogs></PrivateRoute>
                
             },
             {

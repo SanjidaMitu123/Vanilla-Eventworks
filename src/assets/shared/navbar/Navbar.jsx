@@ -1,13 +1,20 @@
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../firebase/AuthProvider";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Navbar = () => {
 
 
+
+
    const {user, logout}= useContext(AuthContext);
+
+   useEffect(()=>{
+            Aos.init({duration:1000})
+   },[])
 
    const singOUT = () =>{
       logout()
@@ -15,8 +22,8 @@ const Navbar = () => {
         .catch()
    }
     return (
-        <div>
-        <nav className="lg:flex sm:grid sm:grid-cols-3 lg:ml-[240px] text-center items-center relative ">
+        <div >
+        <nav data-aos="fade-down" className="lg:flex sm:grid sm:grid-cols-3 lg:ml-[240px] text-center items-center relative ">
             <Logo></Logo>
             <ul className=" lg:flex  sm:grid sm:grid-cols-3 lg:ml-12 text-right sm:gap-2 lg:gap-6 mr-6 lg:font-extrabold sm:font-bold lg:text-2xl text-cyan-500 ">
                 <li>
@@ -61,6 +68,16 @@ const Navbar = () => {
                       }
                      >
                       Reviews
+                   </NavLink>
+                </li>
+                <li>
+                   <NavLink
+                     to="/blogs"
+                     className={({ isActive, isPending }) =>
+                     isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
+                      }
+                     >
+                      Blogs
                    </NavLink>
                 </li>
                 <li>

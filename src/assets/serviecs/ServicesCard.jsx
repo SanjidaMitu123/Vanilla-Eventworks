@@ -1,13 +1,21 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const ServicesCard = ({service}) => {
 
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+},[])
+
     const {id,name,image,price,short_description} = service || {}
     return (
         <div>
-            <div key={id}  className="relative m-11 h-[350px] flex  w-69 flex-col rounded-xl mt-5 bg-clip-border text-gray-700 shadow-md">
+            <div data-aos="fade-up-left" key={id}  className="relative m-11 h-[350px] flex  w-69 flex-col rounded-xl mt-5 bg-clip-border text-gray-700 shadow-md">
       
         <div  className="relative mb-5  h-36 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
           <img
