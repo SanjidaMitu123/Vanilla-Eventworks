@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Slider from "../../Slider/Slider";
 import BestWorks from "../../best work/BestWorks";
-import Footer from "../../footer/Footer";
+
 import Review from "../../reviews/Review";
 import Services from "../../serviecs/Services";
 
@@ -18,7 +18,7 @@ const Home = () => {
             <Services services={services}></Services>
             <BestWorks></BestWorks>
             <Review></Review>
-            <Footer></Footer>
+           
         </div>
     );
 };

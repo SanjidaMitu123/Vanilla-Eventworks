@@ -8,6 +8,7 @@ import Review from "../reviews/Review";
 import ServicesDtails from "../serviecs/ServicesDtails";
 import Login from "../login/Login";
 import Register from "../login/Register";
+import ContractUs from "../pages/contactpage/ContractUs";
 
 
 
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
             {
                 path : "/reviews",
                 element : <Review></Review>
+               
+            },
+            {
+                path : "/contacts",
+                element :<ContractUs></ContractUs>
                
             },
             {

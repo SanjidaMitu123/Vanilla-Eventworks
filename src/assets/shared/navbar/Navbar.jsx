@@ -1,8 +1,19 @@
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
+import { useContext } from "react";
+import { AuthContext } from "../../firebase/AuthProvider";
 
 
 const Navbar = () => {
+
+
+   const {user, logout}= useContext(AuthContext);
+
+   const singOUT = () =>{
+      logout()
+        .then()
+        .catch()
+   }
     return (
         <div>
         <nav className="lg:flex ml-[240px] text-center items-center relative ">
@@ -62,16 +73,26 @@ const Navbar = () => {
                       Contact
                    </NavLink>
                 </li>
-                <li>
-                   <NavLink
-                     to="/login"
-                     className={({ isActive, isPending }) =>
-                     isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
-                      }
-                     >
-                      My Account
-                   </NavLink>
-                </li>
+
+                {
+                  user ?  
+               
+                  <button onClick={singOUT} className="btn">sing out</button>
+                  
+                  :<li>
+                  <NavLink
+                    to="/login"
+                    className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#ff44b7] underline" : ""
+                     }
+                    >
+                     My Account
+                  </NavLink>
+               </li>
+                
+
+                }
+              
             </ul>
         </nav>
     </div>
